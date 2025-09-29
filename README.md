@@ -1,7 +1,12 @@
 # Edits from the normal sqlite3
-- .run() will now respond with err as well as a list of details for the query as well as the parsed SQL (personally I use such SQL for debugging and synchronizations)
-
-
+- .run() will now respond with err as well as a list of details for the query which includes: 
+```
+{
+  lastID: 0,
+  changes: 19,
+  expandedSql: "UPDATE test SET name = 'hello there' WHERE id = 2"
+}
+```
 
 # ⚙️ node-sqlite3
 
